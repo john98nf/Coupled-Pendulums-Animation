@@ -1,7 +1,5 @@
 # Coupled-Pendulums-Animation
 
-This project was created back in the summer of 2017
-
 If anyone wants to build in his personal computer (using a debian based, linux distro), the necessary commands are the following:
 
     g++ -c main.cpp Double_pendulum.cpp pendulum.cpp

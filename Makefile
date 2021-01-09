@@ -1,16 +1,27 @@
-.DEFAULT_GOAL := animation
+TARGET = animation
+.DEFAULT_GOAL := $(TARGET)
 
 CC = g++
 LFLAGS = -lsfml-graphics -lsfml-window -lsfml-system
-objects = pendulum.o Double_pendulum.o main.o
-src = main.cpp Double_pendulum.cpp pendulum.cpp
+_OBJ = pendulum.o Double_pendulum.o main.o
+_SRC = pendulum.cpp Double_pendulum.cpp main.cpp
 
-animation:
-	@echo "Compiling code..."
-	$(CC) -c $(src)
-	@echo "Linking with sfml library..."
-	$(CC) -o main.out $(objects) $(LFLAGS)
+SDIR = src
+ODIR = src
+OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
+
+$(ODIR)/%.o: $(SDIR)/%.cpp
+	@echo "Found $^..."
+	$(CC) -c $^ -o $@
+
+$(TARGET): $(OBJ)
+	@echo "Linking..."
+	$(CC) -o $@.out $^ $(LFLAGS)
+	@echo
+	@echo DONE
 
 clean:
 	@echo "Cleaning up..."
-	rm -f *.o *.out
+	$(RM) -f $(ODIR)/*.o *.out
+	@echo
+	@echo DONE

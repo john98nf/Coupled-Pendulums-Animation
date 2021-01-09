@@ -22,7 +22,7 @@ sudo apt install libsfml-dev
 
 ### 📌 Compiling & Running
 
-The whole process of compiling and linking object files can be done using the *Makefile*. Just type ```make``` inside your terminal. After this operation, executable *main.out* is created. Enjoy 😀😀!
+The whole process of compiling and linking object files can be done using the *Makefile*. Just type ```make``` inside your terminal. After this operation, executable *animation.out* is created. Enjoy 😀😀!
 
 ### 📌 Screenshot
 

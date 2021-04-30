@@ -1,7 +1,7 @@
 # Coupled-Pendulums-Animation
 [![C++](https://img.shields.io/badge/Implementation-C++-pink.svg)](https://www.cplusplus.com/)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/john98nf/Coupled-Pendulums-Animation/blob/master/LICENSEE)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/john98nf/Coupled-Pendulums-Animation/blob/master/LICENSE)
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 A simple animation of the physical response of two [coupled pendulums](https://en.wikipedia.org/wiki/Double_pendulum) oscillating, without any kind of friction losses or external stimulation. Its geometry is the one explained below. This project was created back in the summer of 2017, after my freshman year in college. 
